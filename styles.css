@@ -1,0 +1,138 @@
+:root {
+    --primary: #000;
+    --secondary: #f5f5f5;
+    --accent: #ff4d4d;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary);
+}
+
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
+.carousel {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.carousel img {
+    width: 50%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero {
+    height: 80vh;
+    background: url("https://images.unsplash.com/photo-1445205170230-053b83016050") no-repeat center center/cover;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero button {
+    background-color: var(--accent);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hero button:hover {
+    background-color: #e60000;
+}
+
+
+.info {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#buscador {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+
+.producto {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.producto button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.producto button:hover {
+    background-color: #e60000;
+}

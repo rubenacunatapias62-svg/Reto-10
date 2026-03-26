@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">Fashion Store</a>
+<a href="carrito.html" class="btn btn-light">Carrito</a>
+</div>
+</nav>
+
+<div class="text-center mt-3">
+<input type="text" id="buscador" placeholder="Buscar producto..." onkeyup="buscarProducto()">
+</div>
+
+<section class="productos" id="listaProductos">
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<h3>Camiseta Básica</h3>
+<p>$40.000</p>
+<button onclick="agregarCarrito('Camiseta Básica',40000)">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Sudadera.jpeg">
+<h3>Sudadera</h3>
+<p>$65.000</p>
+<button onclick="agregarCarrito('Sudadera',65000)">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Chaqueta.jpeg">
+<h3>Chaqueta</h3>
+<p>$90.000</p>
+<button onclick="agregarCarrito('Chaqueta',90000)">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Jeans.jpeg">
+<h3>Jeans</h3>
+<p>$75.000</p>
+<button onclick="agregarCarrito('Jeans',75000)">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="vestido.jpeg">
+<h3>Vestido</h3>
+<p>$80.000</p>
+<button onclick="agregarCarrito('Vestido',80000)">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Blusa.jpeg">
+<h3>Blusa</h3>
+<p>$55.000</p>
+<button onclick="agregarCarrito('Blusa',55000)">Agregar</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
